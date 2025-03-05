@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("dev")
+@ActiveProfiles("prod")
 @SpringBootTest
-public class lifeCycleDevTest {
+public class lifeCycleProdTest {
 
     private final Logger logger = LogManager.getLogger(getClass());
 

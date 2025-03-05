@@ -1,18 +1,17 @@
 package ie.jprendiville.spring6di.controllers.i18n;
 
-import ie.jprendiville.spring6di.services.GreetingService;
+import ie.jprendiville.spring6di.GreetingService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class Myi18nController {
     private final Logger logger = LogManager.getLogger(getClass());
 
-    private GreetingService greetingService;
+    private final GreetingService greetingService;
 
-    public Myi18nController(@Qualifier("i18nService") GreetingService greetingService) {
+    public Myi18nController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
