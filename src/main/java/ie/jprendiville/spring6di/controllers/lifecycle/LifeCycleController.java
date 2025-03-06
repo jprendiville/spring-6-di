@@ -1,6 +1,6 @@
 package ie.jprendiville.spring6di.controllers.lifecycle;
 
-import ie.jprendiville.spring6di.LifeCycleService;
+import ie.jprendiville.spring6di.services.LifeCycleService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
